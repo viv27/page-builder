@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-color: lightslategray;
+  margin-left: 160px;
+}
+.circle {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  border: solid 1px #555;
+  background-color: #eed;
+  box-shadow: 5px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 5px -5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 5px -5px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 5px -5px rgba(0, 0, 0, 0.6);
+}
+
+.circle-buttons {
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.circle-button {
+  margin-right: 70px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+}
+.buttons {
+  position: fixed;
+  background-color: lightgray;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+  margin: 10px;
+  cursor: pointer;
+  border: solid black 5px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
